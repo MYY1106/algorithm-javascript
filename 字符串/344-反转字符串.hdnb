@@ -1,0 +1,18 @@
+# 反转字符串
+
+
+
+```js
+/**
+ * @param {character[]} s
+ * @return {void} Do not return anything, modify s in-place instead.
+ * @method 双指针
+ */
+var reverseString = function (s) {
+    let len=s.length;
+    for (let i = 0; i < s.length / 2; i++){
+        [s[len - i - 1], s[i]] = [s[i], s[len - i - 1]]
+    }
+    return s
+};
+```
