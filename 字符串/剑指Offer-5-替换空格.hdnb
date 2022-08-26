@@ -1,0 +1,56 @@
+剑指 Offer 05.替换空格
+
+请实现一个函数，把字符串 s 中的每个空格替换成"%20"。
+
+示例 1：
+
+输入：s = "We are happy."
+输出："We%20are%20happy."
+
+限制：
+
+0 <= s 的长度 <= 10000
+
+```js
+/**
+ * @param {string} s
+ * @return {string}
+ * @method API
+ */
+var replaceSpace = function (s) {
+    return s.replaceAll(" ", "%20")
+};
+```
+
+```js
+/**
+ * @param {string} s
+ * @return {string}
+ * @method 首先扩充数组到每个空格替换成"%20"之后的大小，然后从后向前替换空格，也就是双指针法
+ * @ref https://programmercarl.com/%E5%89%91%E6%8C%87Offer05.%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC.html#%E5%85%B6%E4%BB%96%E8%AF%AD%E8%A8%80%E7%89%88%E6%9C%AC
+ */
+var replaceSpace = function (s) {
+    const strArr = Array.from(s)
+    
+    let spaceCount = 0;
+    for (let i = 0; i < strArr.length; i++){
+        if (strArr[i] === ' ')
+            spaceCount++;
+    }
+
+    let left = strArr.length - 1
+    let right = strArr.length + 2 * spaceCount - 1
+    while (left >= 0) {
+        console.log(strArr);
+        if (strArr[left] === ' ') {
+            strArr[right--] = "0"
+            strArr[right--] = "2"
+            strArr[right--] = "%"
+            left--
+        } else {
+            strArr[right--] = strArr[left--]
+        }
+    }
+    return strArr.join("")
+};
+```
