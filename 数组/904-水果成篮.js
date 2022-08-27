@@ -1,6 +1,7 @@
 /**
  * @param {number[]} fruits
  * @return {number}
+ * @method 滑动窗口
  */
 var totalFruit = function (fruits) {
     let len = -Infinity;
