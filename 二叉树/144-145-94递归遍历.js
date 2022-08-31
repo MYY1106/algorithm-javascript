@@ -31,13 +31,13 @@ var preorderTraversal = function (root) {
  * @method 优化
  */
 var preorderTraversal = function (root) {
-    const result = []
+    const result = [];
 
     const dfs = (root) => {
         if (root) {
-            dfs(root.left)
             result.push(root.val);
-            dfs(root.right)
+            dfs(root.left);
+            dfs(root.right);
         }
     }
 
