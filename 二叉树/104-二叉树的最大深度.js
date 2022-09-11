@@ -34,7 +34,7 @@ var maxDepth = function (root) {
  * @return {number}
  * @see {@link https://leetcode.cn/problems/maximum-depth-of-binary-tree}
  * @see {@link https://programmercarl.com/0104.%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6.html}
- * @method 层次遍历
+ * @method 层序遍历
  * @key 需要注意的是，这里虽然有两层循环，但实际上不是两次循环，想一下就知道了
  */
 var maxDepth = function (root) {
