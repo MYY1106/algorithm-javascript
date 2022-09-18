@@ -1,6 +1,8 @@
 /**
  * @param {string} digits
  * @return {string[]}
+ * @see {@link https://leetcode.cn/problems/letter-combinations-of-a-phone-number/}
+ * @label 待复习 回溯 组合 剪枝
  */
 var letterCombinations = function (digits) {
     if (!digits.length) return [];

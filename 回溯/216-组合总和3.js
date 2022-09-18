@@ -3,7 +3,7 @@
  * @param {number} n
  * @return {number[][]}
  * @see {@link https://leetcode.cn/problems/combination-sum-iii}
- * @method 回溯 组合 剪枝
+ * @label 回溯 组合 剪枝
  */
 var combinationSum3 = function (k, n) {
     const result = [];
