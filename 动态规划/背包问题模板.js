@@ -33,17 +33,18 @@ var WeightBagProblem = (weight, value, size) => {
 var WeightBagProblem = (weight, value, size) => {
     const dp = Array(size + 1).fill(0);
 
+    // 是否需要初始化视情况而定
     for (let i = weight[0]; i <= size; i++) {
         dp[i] = value[0];
     }
 
     for (let i = 1; i < weight.length; i++) {
-        for (let j = 1; j <= size; j++) {
-            dp[j] = j > weight[i] ? Math.max(dp[j], dp[j - weight[i]] + value[i]) : dp[j];
+        for (let j = size; j >= weight[i]; j--) {
+            dp[j] = Math.max(dp[j], dp[j - weight[i]] + value[i]);
         }
     }
 
     return dp[size]
 }
 
-console.log(WeightBagProblem([1, 3, 4, 5], [15, 20, 30, 55], 6));
+console.log(WeightBagProblem([2, 3, 4, 5, 7, 8, 9], [15, 2, 33, 40, 20, 30, 55], 20));
