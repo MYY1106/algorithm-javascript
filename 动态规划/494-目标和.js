@@ -5,6 +5,7 @@
  * @see {@link https://leetcode.cn/problems/target-sum}
  * @see {@link https://programmercarl.com/0494.%E7%9B%AE%E6%A0%87%E5%92%8C.html}
  * @key 这题的关键在于能够推出 left = (target + sum) / 2 和 dp[j]表示什么
+ * @key 求装满背包有几种方法类似的题目，递推公式基本都是这样的
  * @label 待复习 动态规划 01背包问题
  */
 var findTargetSumWays = function (nums, target) {
