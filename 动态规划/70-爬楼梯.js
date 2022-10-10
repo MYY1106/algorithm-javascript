@@ -21,3 +21,28 @@ var climbStairs = function (n) {
 
     return dp[1];
 };
+
+
+/**
+ * @param {number} n
+ * @return {number}
+ * @see {@link https://leetcode.cn/problems/climbing-stairs}
+ * @label 动态规划 完全背包问题
+ * @key 用 1 2 装满 n 有多少种方法
+ */
+var climbStairs = function (n) {
+    const dp = Array(n + 1).fill(0);
+    dp[0] = 1;
+    for (let j = 0; j <= n; j++) { // 遍历背包
+        for (let i = 1; i <= 2; i++) { // 遍历物品
+
+            if (j >= i) {
+                dp[j] += dp[j - i];
+            }
+        }
+    }
+
+    return dp[n];
+};
+
+console.log(climbStairs(5));
