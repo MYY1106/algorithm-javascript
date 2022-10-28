@@ -1,8 +1,9 @@
 /**
  * @param {number[]} nums
  * @return {number[][]}
- * @method 排序+双指针 
- * @ref https://leetcode.cn/problems/3sum/solution/3sumpai-xu-shuang-zhi-zhen-yi-dong-by-jyd/
+ * @see {@link https://leetcode.cn/problems/3sum}
+ * @see {@link https://leetcode.cn/problems/3sum/solution/3sumpai-xu-shuang-zhi-zhen-yi-dong-by-jyd/} 
+ * @label 排序 双指针 待复习
  */
 var threeSum = function (nums) {
     const record = []

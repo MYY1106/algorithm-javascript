@@ -2,11 +2,13 @@
  * @param {string} digits
  * @return {string[]}
  * @see {@link https://leetcode.cn/problems/letter-combinations-of-a-phone-number/}
- * @label 待复习*2 回溯 组合 剪枝
+ * @label 待复习 回溯 组合 剪枝
  */
 var letterCombinations = function (digits) {
-    if (!digits.length) return [];
+    if (digits.length === 0) return [];
 
+    const path = [];
+    const result = [];
     const map = [
         "",
         "",
@@ -19,23 +21,23 @@ var letterCombinations = function (digits) {
         "tuv",
         "wxyz"
     ];
-    const result = [];
-    let path = [];
 
-    const backTracking = (start) => {
+    backTracking(0);
+    return result;
+
+    function backTracking (index) {
         if (path.length === digits.length) {
+            console.log(path);
             result.push(path.join(""));
             return;
         }
 
-        for (const letter of map[Number(digits[start])]) {
-            path.push(letter);
-            backTracking(start + 1);
+        for (let i = 0; i < map[digits[index]].length; i++) {
+            path.push(map[digits[index]][i]);
+            backTracking(index + 1);
             path.pop();
         }
     }
-
-    backTracking(0);
-
-    return result;
 };
+
+console.log(letterCombinations("2"));
