@@ -2,6 +2,8 @@
  * @param {string} s
  * @param {string} t
  * @return {boolean}
+ * @see {@link https://leetcode.cn/problems/group-anagrams/submissions/}
+ * @label 已复习
  */
 var isAnagram = function (s, t) {
     if (s.length !== t.length) return false;

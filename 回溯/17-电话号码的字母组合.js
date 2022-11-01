@@ -2,7 +2,7 @@
  * @param {string} digits
  * @return {string[]}
  * @see {@link https://leetcode.cn/problems/letter-combinations-of-a-phone-number/}
- * @label 待复习*2 回溯 组合 剪枝
+ * @label 待复习*2 回溯 组合 剪枝 已复习*1
  */
 var letterCombinations = function (digits) {
     if (!digits.length) return [];

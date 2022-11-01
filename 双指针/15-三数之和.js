@@ -3,7 +3,7 @@
  * @return {number[][]}
  * @see {@link https://leetcode.cn/problems/3sum}
  * @see {@link https://leetcode.cn/problems/3sum/solution/3sumpai-xu-shuang-zhi-zhen-yi-dong-by-jyd/} 
- * @label 排序 双指针 待复习
+ * @label 排序 双指针 待复习*2 已复习*1
  */
 var threeSum = function (nums) {
     const record = []

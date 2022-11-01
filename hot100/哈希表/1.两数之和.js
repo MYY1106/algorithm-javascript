@@ -2,6 +2,7 @@
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}
+ * @see {@link https://leetcode.cn/problems/two-sum}
 */
 var twoSum = (nums, target) => {
     const map = new Map();

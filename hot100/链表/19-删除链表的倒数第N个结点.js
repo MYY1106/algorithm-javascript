@@ -9,6 +9,8 @@
  * @param {ListNode} head
  * @param {number} n
  * @return {ListNode}
+ * @see {@link https://leetcode.cn/problems/remove-nth-node-from-end-of-list}
+ * @label 链表
  */
 var removeNthFromEnd = function (head, n) {
     const newHead = new ListNode(0, head);

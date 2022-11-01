@@ -9,7 +9,9 @@
  * @param {ListNode} head
  * @param {number} n
  * @return {ListNode}
- * @ref https://leetcode.cn/problems/remove-nth-node-from-end-of-list/solution/dong-hua-tu-jie-leetcode-di-19-hao-wen-ti-shan-chu/
+ * @see {@link https://leetcode.cn/problems/remove-nth-node-from-end-of-list}
+ * @see {@link https://leetcode.cn/problems/remove-nth-node-from-end-of-list/solution/dong-hua-tu-jie-leetcode-di-19-hao-wen-ti-shan-chu/}
+ * @label 已复习*1 待复习*2
  */
 var removeNthFromEnd = function (head, n) {
     const newHead = new ListNode(0, head); // 虚拟头节点

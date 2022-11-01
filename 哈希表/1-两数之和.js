@@ -3,6 +3,8 @@
  * @param {number} target
  * @return {number[]}
  * @method 哈希表Map
+ * @see {@link https://leetcode.cn/problems/two-sum}
+ * @label 已复习*1
  */
 var twoSum = function (nums, target) {
     const map = new Map()
@@ -23,6 +25,7 @@ var twoSum = function (nums, target) {
  * @param {number} target
  * @return {number[]}
  * @method 哈希表优化
+ * @see {@link https://leetcode.cn/problems/two-sum}
  */
 var twoSum = function (nums, target) {
     const map = new Map()

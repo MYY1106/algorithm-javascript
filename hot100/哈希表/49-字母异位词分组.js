@@ -1,6 +1,8 @@
 /**
  * @param {string[]} strs
  * @return {string[][]}
+ * @see {@link https://leetcode.cn/problems/group-anagrams/submissions/}
+ * @method 哈希，将字符串排序后当作键值
  */
 var groupAnagrams = function (strs) {
     const map = new Map();
