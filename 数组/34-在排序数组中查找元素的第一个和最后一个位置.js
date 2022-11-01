@@ -2,7 +2,9 @@
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}
- * @reference https://www.bilibili.com/video/BV1d54y1q7k7?spm_id_from=333.999.0.0&vd_source=a33e569437ddb90e046a9ab727c74b58
+ * @see {@link https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/}
+ * @see {@link https://www.bilibili.com/video/BV1d54y1q7k7?spm_id_from=333.999.0.0&vd_source=a33e569437ddb90e046a9ab727c74b58}
+ * @label 待复习*2 蓝红二分法
  */
 var searchRange = function (nums, target) {
     const { right: leftBorder } = search(nums, target, 0, nums.length - 1, (num, target) => num < target)

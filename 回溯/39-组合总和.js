@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number[][]}
  * @see {@link https://leetcode.cn/problems/combination-sum/}
- * @label 回溯 模板 组合 剪枝
+ * @label 回溯 模板 组合 剪枝 已复习*1
  */
 var combinationSum = function (candidates, target) {
     const result = [];
