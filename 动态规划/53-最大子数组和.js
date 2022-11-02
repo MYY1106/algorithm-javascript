@@ -1,6 +1,8 @@
 /**
  * @param {number[]} nums
  * @return {number}
+ * @see{@link https://leetcode.cn/problems/maximum-subarray}
+ * @label 已复习*1
  */
 var maxSubArray = function (nums) {
     const dp = Array(nums.length);
@@ -15,4 +17,20 @@ var maxSubArray = function (nums) {
     return result; // 这里不能是dp[dp.length - 1]，因为dp[dp.length - 1]不一定是最大的
 };
 
-console.log(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ * @see{@link https://leetcode.cn/problems/maximum-subarray}
+ */
+var maxSubArray = function (nums) {
+    let dp = nums[0];
+    let max = nums[0];
+
+    for (let i = 1; i < nums.length; i++) {
+        dp = Math.max(dp + nums[i], nums[i]);
+        if (dp > max) max = dp;
+    }
+
+    return max;
+}

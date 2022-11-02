@@ -2,7 +2,7 @@
  * @param {number} n
  * @return {number}
  * @see {@link https://leetcode.cn/problems/climbing-stairs}
- * @label 动态规划
+ * @label 动态规划 已复习*1
  * @key 爬到1层有1种方法，爬到2层有两种方法
  * @key 爬到3层可以从1层跨两步，还可以从3层跨一步
  * @key 所以 dp[i] = dp[i - 1] + dp[i - 2]
@@ -44,5 +44,3 @@ var climbStairs = function (n) {
 
     return dp[n];
 };
-
-console.log(climbStairs(5));
