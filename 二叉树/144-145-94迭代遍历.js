@@ -11,6 +11,7 @@
 /**
  * @param {TreeNode} root
  * @return {number[]}
+ * @label 已复习*1
  */
 var preorderTraversal = function (root) {
     const stack = [];
@@ -31,6 +32,7 @@ var preorderTraversal = function (root) {
 /**
  * @param {TreeNode} root
  * @return {number[]}
+ * @label 已复习*1
  */
 var inorderTraversal = function (root) {
     const stack = [];
@@ -55,6 +57,7 @@ var inorderTraversal = function (root) {
 /**
  * @param {TreeNode} root
  * @return {number[]}
+ * @label 已复习*1
  */
 var postorderTraversal = function (root) {
     const stack = [];
