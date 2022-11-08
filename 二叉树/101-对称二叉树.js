@@ -13,7 +13,7 @@
  * @see {@link https://leetcode.cn/problems/symmetric-tree/}
  * @see {@link https://programmercarl.com/0101.%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91.html}
  * @key 注意终止条件
- * @method 递归
+ * @label 递归 已复习*1
  */
 var isSymmetric = function (root) {
     // 1. 确定递归的参数 root.left root.right和返回值true false 
@@ -37,7 +37,7 @@ var isSymmetric = function (root) {
  * @see {@link https://leetcode.cn/problems/symmetric-tree/}
  * @see {@link https://programmercarl.com/0101.%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91.html}
  * @key 注意终止条件
- * @method 迭代前序遍历
+ * @label 迭代前序遍历 已复习*1
  */
 var isSymmetric = function (root) {
     if (!root) return true;

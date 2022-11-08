@@ -9,8 +9,9 @@
 /**
  * @param {TreeNode} root
  * @return {number[][]}
- * @method DFS
+ * @see {@link https://leetcode.cn/problems/binary-tree-level-order-traversal/}
  * @see {@link https://github.com/sl1673495/leetcode-javascript/issues/30}
+ * @label DFS 已复习*1
  */
 var levelOrder = function (root) {
     const result = [];
@@ -33,8 +34,9 @@ var levelOrder = function (root) {
 /**
  * @param {TreeNode} root
  * @return {number[][]}
- * @method BFS
+ * @see {@link https://leetcode.cn/problems/binary-tree-level-order-traversal/}
  * @see {@link https://github.com/sl1673495/leetcode-javascript/issues/30}
+ * @label BFS 已复习*1
  */
 var levelOrder = function (root) {
     if (!root) return [];

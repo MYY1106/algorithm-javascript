@@ -1,7 +1,7 @@
 /**
  * @param {TreeNode} root
  * @return {boolean}
- * @label 待复习
+ * @label 待复习 已复习*1
  */
 var isValidBST = function (root) {
     let preVal = -Infinity; // 初始化为负无穷
